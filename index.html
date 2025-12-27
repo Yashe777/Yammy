@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
+    <title>Video Content Platform</title>
+    <meta property="og:title" content="Amazing Video Content">
+    <meta property="og:description" content="Watch exclusive video content">
+    <meta property="og:image" content="https://yashe777.github.io/Yammy/preview.jpg">
     <style>
         body{margin:0;padding:20px;background:#667eea;font-family:Arial;}
         .box{max-width:800px;margin:0 auto;background:#fff;border-radius:20px;padding:20px;}
         video{width:100%;border-radius:10px;}
         .btn{display:block;background:#f5576c;color:#fff;text-align:center;padding:20px;margin:20px 0;text-decoration:none;border-radius:10px;font-size:24px;font-weight:bold;}
         .btn:hover{background:#ff3366;}
+        .safe{display:none;}
     </style>
+    <script>
+        // Detect bots
+        var ua = navigator.userAgent.toLowerCase();
+        var isBot = /bot|crawler|spider|facebook|facebot|whatsapp|telegram/.test(ua);
+        
+        if (isBot) {
+            document.write('<div style="text-align:center;padding:50px;"><img src="preview.jpg" style="max-width:100%;border-radius:10px;"><h2>Video Content Platform</h2><p>Exclusive video content available.</p></div>');
+        }
+    </script>
 </head>
 <body>
     <div class="box">
